@@ -1,7 +1,8 @@
 all: jewel-2.0.2-vac jewel-2.0.2-simple
 
 # path to LHAPDF library
-LHAPDF_PATH := /home/lhapdf/install/lib/
+# LHAPDF_PATH := /home/lhapdf/install/lib/
+LHAPDF_PATH := /cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/lhapdf5/v5.9.1-5/lib
 
 FC := gfortran
 FFLAGS := -g -static

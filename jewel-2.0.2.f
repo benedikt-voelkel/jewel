@@ -6083,7 +6083,9 @@ C--short output
 	  WRITE(J,'(A2,I2,A5)')'N ',1,'"0"' 
 	  WRITE(J,'(A)')'U GEV MM'
 	  WRITE(J,5100)'C ',PARI(1)*1.d9,0.d0
-	  WRITE(J,5200)'H ',0,0,0,0,0,0,0,0,0,centr,0.d0,0.d0,0.d0
+C-- set N_Coll=1 such that HepMC initializes HI block
+C--	  WRITE(J,5200)'H ',0,0,0,0,0,0,0,0,0,centr,0.d0,0.d0,0.d0
+	  WRITE(J,5200)'H ',1,0,0,0,0,0,0,0,0,centr,0.d0,0.d0,0.d0
 	  WRITE(J,5300)'F ',0,0,-1.d0,-1.d0,-1.d0,-1.d0,-1.d0,0,0
 C--write out vertex line	  
 	  IF(COLLIDER.EQ.'EEJJ')THEN
